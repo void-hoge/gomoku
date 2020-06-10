@@ -29,10 +29,10 @@ bool board::is_finished() const {
 	//diagonal check
 	for (int i = 0; i < SIZE-N_MOKU; i++) {
 		for (int j = 0; j < SIZE-N_MOKU; j++) {
-			if ((cells[current_color] & (diagonal_mask1<<(j*SIZE+i))) == (diagonal_mask1<<(j*SIZE+i))) {
+			if ((cells[current_color] & (diagonal_mask1<<(i*SIZE+j))) == (diagonal_mask1<<(i*SIZE+j))) {
 				return true;
 			}
-			if ((cells[current_color] & (diagonal_mask2<<(j*SIZE+i))) == (diagonal_mask2<<(j*SIZE+i))) {
+			if ((cells[current_color] & (diagonal_mask2<<(i*SIZE+j))) == (diagonal_mask2<<(i*SIZE+j))) {
 				return true;
 			}
 		}
