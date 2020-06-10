@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/voidhoge/programming/cpp/gomoku/board.cpp
+board.hpp
+/home/voidhoge/programming/cpp/gomoku/board.hpp
+iostream
+-
+
+/home/voidhoge/programming/cpp/gomoku/board.hpp
+bitset
+-
+array
+-
+
+/home/voidhoge/programming/cpp/gomoku/main.cpp
+iostream
+-
+board.hpp
+/home/voidhoge/programming/cpp/gomoku/board.hpp
+
